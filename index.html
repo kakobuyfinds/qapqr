@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="theme-color" content="#233bc7">
+  <title>OrientDig spreadsheet: categorías, tallas y guía de selección</title>
+  <meta name="description" content="Guía independiente de OrientDig spreadsheet: explora categorías y aprende a comparar medidas, fotos QC, materiales y costes antes de elegir.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_ES">
+  <meta property="og:title" content="OrientDig spreadsheet · Elige con criterio">
+  <meta property="og:description" content="Una guía visual para ordenar tus búsquedas, comparar prendas y revisar los detalles que importan.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&amp;fit=crop&amp;w=1200&amp;q=80">
+  <meta property="og:image:alt" content="Zapatilla deportiva Nike roja sobre un fondo rojo">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="OrientDig spreadsheet · Elige con criterio">
+  <meta name="twitter:description" content="Categorías, tallas, fotos QC y preguntas claras para comparar mejor.">
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&amp;fit=crop&amp;w=1200&amp;q=80">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23233bc7'/%3E%3Cpath d='M17 18h30v28H17zM17 28h30M28 18v28' stroke='%23fff' stroke-width='4' fill='none'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="preload" as="image" href="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&amp;fit=crop&amp;w=1000&amp;q=80">
+
+  <!--
+    Archivo: index.html.
+    Investigación editorial: consulta "OrientDig spreadsheet".
+    Google no fue accesible durante esta sesión. Se revisaron resultados
+    de un buscador alternativo; no se acredita una posición en Google.
+    Diez dominios consultados mediante sus resultados de búsqueda:
+    orientdigtable.com: categorías, comparación y transporte.
+    orientdigindex.com: fuente del enlace, variantes y fecha de revisión.
+    orientdigi.com: organización visual de productos y fotos QC.
+    orientdigs.com: introducción a hojas con enlaces de productos.
+    orientdig.net: medidas, selección y preguntas frecuentes.
+    orientdigfinds.com: categorías, tallas y seguimiento de referencias.
+    orientdig-qc.com: fotografías de detalle y navegación por tipo.
+    orientdig.top: directorio visual y categorías.
+    usfansyupoo.com: opciones del producto y comparación de referencias.
+    spreadsheet-kakobuy.com: revisión de enlaces y contexto de cada fila.
+    No se reproducen sus cifras comerciales, reseñas ni promesas.
+
+    Núcleo: OrientDig spreadsheet.
+    Secundarias:
+    guía de OrientDig spreadsheet; catálogo OrientDig por categorías;
+    tallas en OrientDig; fotos QC en OrientDig.
+
+    Intenciones de cola larga desarrolladas en el texto:
+    qué es una OrientDig spreadsheet;
+    cómo usar una OrientDig spreadsheet;
+    cómo organizar una lista de productos;
+    cómo comparar enlaces de productos;
+    cómo revisar un enlace antes de comprar;
+    cómo guardar una selección de prendas;
+    cómo comparar zapatillas por medidas;
+    cómo medir la plantilla de una zapatilla;
+    cómo revisar la suela en fotos;
+    cómo comparar sudaderas por contorno;
+    cómo elegir una camiseta por medidas;
+    cómo revisar el largo de una chaqueta;
+    cómo medir pantalones y shorts;
+    cómo comprobar la talla de una gorra;
+    cómo comparar las piezas de un conjunto;
+    cómo revisar la composición de ropa interior;
+    cómo elegir la talla de una camiseta deportiva;
+    cómo comprobar las dimensiones de accesorios;
+    qué mirar en fotos QC de zapatillas;
+    cómo revisar costuras y cierres;
+    cómo calcular el coste total de un pedido;
+    diferencia entre peso real y volumétrico;
+    cómo revisar condiciones de devolución;
+    cómo detectar información incompleta en una ficha.
+    No se ha añadido canonical sin conocer el dominio de publicación.
+  -->
+
+  <style>
+    :root{
+      color-scheme:light;
+      --paper:#f6f3eb;
+      --ink:#20251f;
+      --muted:#61665e;
+      --blue:#233bc7;
+      --lime:#dfef88;
+      --line:#d8d9ce;
+      --white:#fff;
+      --radius:22px;
+      --max:1180px;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--paper);color:var(--ink);font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.65}
+    a{color:inherit;text-decoration:none}
+    a:focus-visible,summary:focus-visible{outline:3px solid var(--blue);outline-offset:5px}
+    img{display:block;width:100%;height:auto}
+    h1,h2,h3,p,figure{margin:0}
+    h1,h2,h3{line-height:1.12;text-wrap:balance}
+    p{max-width:72ch}
+    .wrap{width:min(var(--max),calc(100% - 40px));margin-inline:auto}
+    .topline{padding:9px 20px;background:var(--blue);color:#fff;text-align:center;font-size:.76rem;letter-spacing:.07em}
+    .header{display:flex;align-items:center;justify-content:space-between;gap:24px;padding-block:23px}
+    .brand{display:flex;align-items:center;gap:10px;font-size:1.2rem;font-weight:850;letter-spacing:-.04em}
+    .brand-icon{display:grid;place-items:center;width:36px;height:36px;border:1px solid var(--ink);border-radius:50%;font-size:1rem}
+    .header-links{display:flex;align-items:center;gap:24px;font-size:.86rem}
+    .header-links a:hover{text-decoration:underline;text-underline-offset:4px}
+    .header-links .visit{padding:9px 17px;border:1px solid var(--ink);border-radius:99px}
+    .eyebrow{font-size:.72rem;font-weight:800;text-transform:uppercase;letter-spacing:.15em}
+    .category-section{border-block:1px solid var(--line);padding-block:20px}
+    .category-head{display:flex;align-items:center;justify-content:space-between;gap:15px;margin-bottom:14px}
+    .category-head h2{font-size:.92rem}
+    .category-head p{font-size:.76rem;color:var(--muted)}
+    .categories{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px}
+    .category{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:12px 13px;border:1px solid var(--line);border-radius:10px;background:#ffffff70;font-size:.82rem;font-weight:650;transition:background .15s,color .15s}
+    .category:hover{background:var(--blue);border-color:var(--blue);color:white}
+    .category span:last-child{font-size:1rem}
+    .hero{display:grid;grid-template-columns:1.05fr 1fr;gap:48px;align-items:center;padding-block:52px 64px}
+    .hero .eyebrow{color:var(--blue);margin-bottom:23px}
+    h1{font-size:clamp(2.7rem,5.2vw,4.7rem);letter-spacing:-.065em}
+    h1 span{display:block}
+    .hero-sub{margin-top:23px;color:var(--muted);font-size:1.04rem}
+    .answer{margin-top:24px;padding-left:18px;border-left:3px solid var(--blue);font-size:.94rem}
+    .actions{display:flex;flex-wrap:wrap;align-items:center;gap:16px;margin-top:29px}
+    .button{display:inline-flex;justify-content:center;align-items:center;gap:18px;padding:13px 22px;background:var(--blue);color:white;border:1px solid var(--blue);border-radius:99px;font-size:.89rem;font-weight:750}
+    .button:hover{background:#182b9d}
+    .text-link{font-size:.86rem;text-decoration:underline;text-underline-offset:5px}
+    .hero-figure{position:relative}
+    .hero-image{aspect-ratio:1/1;object-fit:cover;border-radius:var(--radius)}
+    .image-label{position:absolute;top:18px;left:18px;padding:7px 12px;border-radius:99px;background:var(--paper);font-size:.7rem;font-weight:750}
+    .hero-caption{display:flex;justify-content:space-between;gap:15px;padding-top:12px;font-size:.72rem;color:var(--muted)}
+    .principle{display:grid;grid-template-columns:1fr 2fr;gap:35px;border-block:1px solid var(--line);padding-block:26px;margin-bottom:60px}
+    .principle strong{font-size:1.08rem;letter-spacing:-.02em}
+    .principle p{font-size:.9rem;color:var(--muted)}
+    .section{padding-bottom:64px}
+    .section-heading{display:flex;align-items:flex-end;justify-content:space-between;gap:25px;margin-bottom:27px}
+    .section-heading h2{font-size:clamp(1.8rem,3.2vw,2.65rem);letter-spacing:-.045em;margin-top:9px}
+    .section-heading>p{max-width:34ch;color:var(--muted);font-size:.89rem}
+    .editorial-grid{display:grid;grid-template-columns:1.15fr 1fr 1fr;gap:19px}
+    .editorial-card{min-width:0}
+    .editorial-image{aspect-ratio:1/1;object-fit:contain;background:#fff;border:1px solid var(--line);border-radius:17px}
+    .editorial-card:first-child .editorial-image{background:#edf0f8}
+    .editorial-card .tag{display:block;margin-top:18px;color:var(--blue);font-size:.7rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase}
+    .editorial-card h3{font-size:1.25rem;letter-spacing:-.025em;margin-top:8px}
+    .editorial-card p{font-size:.86rem;color:var(--muted);margin-top:11px}
+    .editorial-card .text-link{display:inline-block;margin-top:14px}
+    .image-note{font-size:.74rem;color:var(--muted);margin-top:22px}
+    .method{display:grid;grid-template-columns:1fr 1.6fr;gap:45px;background:var(--blue);color:white;padding:40px;border-radius:var(--radius)}
+    .method h2{font-size:clamp(1.8rem,3vw,2.5rem);letter-spacing:-.04em;margin-top:14px}
+    .method-intro{color:#e1e5ff;margin-top:20px;font-size:.93rem}
+    .steps{list-style:none;counter-reset:step;margin:0;padding:0}
+    .steps li{counter-increment:step;display:grid;grid-template-columns:38px 1fr;gap:16px;padding-block:19px;border-bottom:1px solid #ffffff40}
+    .steps li:first-child{padding-top:0}
+    .steps li:last-child{border-bottom:0;padding-bottom:0}
+    .steps li::before{content:"0" counter(step);font-size:.8rem;color:var(--lime);font-weight:800;padding-top:3px}
+    .steps h3{font-size:1.06rem}
+    .steps p{font-size:.87rem;color:#e1e5ff;margin-top:7px}
+    .table-shell{overflow-x:auto;border:1px solid var(--line);border-radius:16px;background:#ffffff65}
+    table{width:100%;border-collapse:collapse;font-size:.88rem;min-width:620px}
+    caption{text-align:left;padding:17px 20px;font-weight:750;background:var(--lime)}
+    th,td{text-align:left;padding:16px 20px;vertical-align:top;border-bottom:1px solid var(--line)}
+    th{font-size:.73rem;text-transform:uppercase;letter-spacing:.07em}
+    tbody tr:last-child td{border-bottom:0}
+    td:first-child{font-weight:700;width:22%}
+    td:nth-child(2){width:37%}
+    .journal{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+    .article{padding:25px;border:1px solid var(--line);border-radius:17px;background:#ffffff60}
+    .article .number{font-size:.73rem;color:var(--blue);font-weight:800;letter-spacing:.08em}
+    .article h3{margin-top:15px;font-size:1.27rem;letter-spacing:-.03em}
+    .article p{font-size:.87rem;color:var(--muted);margin-top:15px}
+    .article ul{padding-left:19px;font-size:.85rem;margin:15px 0 0}
+    .article li+li{margin-top:9px}
+    .article .takeaway{padding-top:15px;border-top:1px solid var(--line);color:var(--ink)}
+    .faq-layout{display:grid;grid-template-columns:1fr 1.6fr;gap:50px}
+    .faq-layout h2{font-size:2.5rem;letter-spacing:-.045em;margin-top:12px}
+    .faq-layout>div>p{font-size:.9rem;color:var(--muted);margin-top:18px}
+    details{border-bottom:1px solid var(--line);padding-block:18px}
+    details:first-child{border-top:1px solid var(--line)}
+    summary{font-weight:700;font-size:.97rem;cursor:pointer;padding-right:15px}
+    details p{font-size:.89rem;color:var(--muted);padding-top:13px}
+    .closing{display:flex;justify-content:space-between;align-items:center;gap:25px;padding:31px 35px;background:var(--lime);border-radius:18px}
+    .closing h2{font-size:1.7rem;letter-spacing:-.04em}
+    .closing p{font-size:.88rem;margin-top:8px}
+    .footer{border-top:1px solid var(--line);padding-block:28px 34px;margin-top:58px}
+    .footer-top{display:flex;justify-content:space-between;align-items:center;gap:20px}
+    .footer p{font-size:.75rem;color:var(--muted);margin-top:17px;max-width:95ch}
+    .footer .text-link{font-size:.8rem}
+    @media(min-width:1000px){
+      .deferred{content-visibility:auto;contain-intrinsic-size:auto 650px}
+    }
+    @media(max-width:850px){
+      .hero{gap:28px}
+      .categories{grid-template-columns:repeat(3,minmax(0,1fr))}
+      .editorial-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+      .method{grid-template-columns:1fr;padding:30px;gap:30px}
+      .journal{grid-template-columns:1fr}
+      .faq-layout{grid-template-columns:1fr;gap:23px}
+    }
+    @media(max-width:600px){
+      .wrap{width:calc(100% - 28px)}
+      .topline{font-size:.65rem;letter-spacing:.035em}
+      .header{padding-block:17px}
+      .header-links{gap:12px}
+      .header-links .secondary{display:none}
+      .brand{font-size:1.05rem}
+      .categories{grid-template-columns:repeat(2,minmax(0,1fr))}
+      .category{font-size:.76rem;padding:11px}
+      .category-head{align-items:flex-start}
+      .category-head p{max-width:20ch;text-align:right}
+      .hero{grid-template-columns:1fr;padding-block:32px 37px}
+      h1{font-size:3.12rem}
+      .hero .eyebrow{margin-bottom:16px}
+      .hero-figure{margin-top:5px}
+      .principle{grid-template-columns:1fr;gap:10px;margin-bottom:40px}
+      .section{padding-bottom:42px}
+      .section-heading{display:block}
+      .section-heading>p{margin-top:14px}
+      .editorial-grid{grid-template-columns:1fr}
+      .editorial-card{display:grid;grid-template-columns:110px 1fr;column-gap:17px}
+      .editorial-card figure{grid-row:1/5}
+      .editorial-card .tag{margin-top:0}
+      .editorial-card h3{font-size:1.08rem}
+      .editorial-card p{font-size:.82rem}
+      .editorial-card .text-link{font-size:.78rem}
+      .method{padding:25px}
+      .closing{align-items:flex-start;flex-direction:column;padding:25px}
+      .footer-top{align-items:flex-start}
+      .hero-caption{font-size:.66rem}
+    }
+    @media(prefers-reduced-motion:reduce){
+      *{transition:none!important;scroll-behavior:auto!important}
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@graph":[
+      {
+        "@type":"WebPage",
+        "@id":"#pagina",
+        "name":"OrientDig spreadsheet: categorías, tallas y guía de selección",
+        "description":"Guía independiente para ordenar búsquedas y comparar medidas, fotos QC, materiales y costes antes de elegir.",
+        "inLanguage":"es",
+        "about":{
+          "@type":"Thing",
+          "name":"OrientDig spreadsheet",
+          "description":"Lista de enlaces y datos de productos utilizada como punto de partida para comparar opciones."
+        },
+        "hasPart":[
+          {"@id":"#articulo-medidas"},
+          {"@id":"#articulo-qc"},
+          {"@id":"#articulo-costes"},
+          {"@id":"#preguntas"}
+        ]
+      },
+      {
+        "@type":"Article",
+        "@id":"#articulo-medidas",
+        "headline":"La talla empieza en una prenda que ya usas",
+        "description":"Cómo comparar medidas de camisetas, sudaderas y pantalones con una prenda de referencia.",
+        "inLanguage":"es",
+        "author":{"@type":"Organization","name":"Mesa de selección"},
+        "articleBody":"Mide una prenda que te quede bien sobre una superficie plana. En camisetas y sudaderas, anota ancho de pecho, largo y manga. En pantalones, compara cintura, tiro y entrepierna. Comprueba si la tabla expresa medidas de la prenda o del cuerpo y si utiliza centímetros o pulgadas. Una talla habitual no sustituye estas comprobaciones."
+      },
+      {
+        "@type":"Article",
+        "@id":"#articulo-qc",
+        "headline":"Fotos QC: detalle antes que logotipo",
+        "description":"Qué revisar en las fotos de control de calidad y qué no pueden demostrar.",
+        "inLanguage":"es",
+        "author":{"@type":"Organization","name":"Mesa de selección"},
+        "articleBody":"Las fotos QC pueden ayudar a observar defectos visibles, costuras, cierres y diferencias entre piezas. En zapatillas, revisa ambos perfiles, talones y suelas. En accesorios, busca bordes, uniones y herrajes. Una imagen no confirma por sí sola la composición, la comodidad ni la autenticidad. Si falta una vista necesaria, solicita otra imagen."
+      },
+      {
+        "@type":"Article",
+        "@id":"#articulo-costes",
+        "headline":"El importe de la ficha no es el presupuesto",
+        "description":"Cómo reunir los componentes del coste de un pedido sin inventar importes.",
+        "inLanguage":"es",
+        "author":{"@type":"Organization","name":"Mesa de selección"},
+        "articleBody":"Separa producto, transporte interno, servicios, envío internacional y posibles impuestos o cargos de importación. Comprueba la moneda, el tipo de cambio y las condiciones aplicables. El peso real corresponde a la masa del paquete; el volumétrico se calcula a partir de sus dimensiones según la fórmula del transportista. Revisa las condiciones de devolución antes de pagar."
+      },
+      {
+        "@type":"FAQPage",
+        "@id":"#preguntas",
+        "inLanguage":"es",
+        "mainEntity":[
+          {
+            "@type":"Question",
+            "name":"¿Qué es una OrientDig spreadsheet?",
+            "acceptedAnswer":{
+              "@type":"Answer",
+              "text":"Es una lista de enlaces y datos de productos que sirve para organizar una búsqueda y comparar opciones. La información de cada fila debe contrastarse con la ficha actual del artículo."
+            }
+          },
+          {
+            "@type":"Question",
+            "name":"¿Cómo usar una OrientDig spreadsheet sin perderse entre enlaces?",
+            "acceptedAnswer":{
+              "@type":"Answer",
+              "text":"Elige una categoría, reúne unas pocas opciones comparables y anota enlace, variante, medidas y fecha de revisión. Descarta las fichas que no aporten los datos necesarios para decidir."
+            }
+          },
+          {
+            "@type":"Question",
+            "name":"¿Cómo comprobar las tallas en OrientDig?",
+            "acceptedAnswer":{
+              "@type":"Answer",
+              "text":"Compara la tabla del artículo con una prenda o un calzado que ya te quede bien. Revisa las unidades y distingue entre medidas del cuerpo y medidas de la prenda; no te bases únicamente en la letra de la talla."
+            }
+          },
+          {
+            "@type":"Question",
+            "name":"¿Las fotos QC en OrientDig garantizan autenticidad?",
+            "acceptedAnswer":{
+              "@type":"Answer",
+              "text":"No. Las fotos de control de calidad pueden mostrar detalles y defectos visibles, pero no constituyen por sí solas una prueba de autenticidad, composición o durabilidad."
+            }
+          },
+          {
+            "@type":"Question",
+            "name":"¿Dónde llevan los enlaces de esta página?",
+            "acceptedAnswer":{
+              "@type":"Answer",
+              "text":"Los diez accesos de categorías llevan a sus páginas correspondientes en cafans.com. Los demás enlaces de navegación llevan a https://www.cafans.com. Esta página no ofrece una hoja descargable ni tramita pedidos."
+            }
+          },
+          {
+            "@type":"Question",
+            "name":"¿Esta guía representa a OrientDig o a las marcas de las imágenes?",
+            "acceptedAnswer":{
+              "@type":"Answer",
+              "text":"No. Es una guía editorial independiente. Los nombres y las imágenes se utilizan como referencias visuales; no implican colaboración, autorización comercial ni disponibilidad de esos artículos en el destino."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+<link rel="canonical" href="https://kakobuyfinds.github.io/qapqr/">
+</head>
+<body>
+  <div class="topline">GUÍA INDEPENDIENTE EN ESPAÑOL · MODA, MEDIDAS Y DECISIONES CON CONTEXTO</div>
+
+  <header class="header wrap">
+    <a class="brand" href="https://www.cafans.com" aria-label="Mesa de selección: visitar Cafans">
+      <span class="brand-icon" aria-hidden="true">M.</span>
+      Mesa de selección
+    </a>
+    <nav class="header-links" aria-label="Navegación principal">
+      <a class="secondary" href="https://www.cafans.com">Explorar catálogo</a>
+      <a class="visit" href="https://www.cafans.com">Ir a Cafans ↗</a>
+    </nav>
+  </header>
+
+  <main class="wrap">
+    <section class="category-section" aria-labelledby="categorias-titulo">
+      <div class="category-head">
+        <h2 id="categorias-titulo">Empieza por una categoría</h2>
+        <p>Accesos directos al catálogo de Cafans</p>
+      </div>
+      <nav class="categories" aria-label="Categorías de productos">
+        <a class="category" href="https://cafans.com/category-911-Shoes.html" aria-label="Shoes: zapatillas y calzado"><span>Shoes</span><span aria-hidden="true">↗</span></a>
+        <a class="category" href="https://cafans.com/category-912-Hoodies%2FSweaters.html" aria-label="Hoodies y Sweaters: sudaderas y jerséis"><span>Hoodies/Sweaters</span><span aria-hidden="true">↗</span></a>
+        <a class="category" href="https://cafans.com/category-913-T-Shirts.html" aria-label="T-Shirts: camisetas"><span>T-Shirts</span><span aria-hidden="true">↗</span></a>
+        <a class="category" href="https://cafans.com/category-914-Jackets.html" aria-label="Jackets: chaquetas"><span>Jackets</span><span aria-hidden="true">↗</span></a>
+        <a class="category" href="https://cafans.com/category-915-Pants%2FShorts.html" aria-label="Pants y Shorts: pantalones y pantalones cortos"><span>Pants/Shorts</span><span aria-hidden="true">↗</span></a>
+        <a class="category" href="https://cafans.com/category-916-Headwear.html" aria-label="Headwear: gorras y sombreros"><span>Headwear</span><span aria-hidden="true">↗</span></a>
+        <a class="category" href="https://cafans.com/category-917-Sets.html" aria-label="Sets: conjuntos"><span>Sets</span><span aria-hidden="true">↗</span></a>
+        <a class="category" href="https://cafans.com/category-918-underwear%2Funderpants.html" aria-label="Underwear y underpants: ropa interior"><span>Underwear/underpants</span><span aria-hidden="true">↗</span></a>
+        <a class="category" href="https://cafans.com/category-919-Jersey.html" aria-label="Jersey: camisetas deportivas"><span>Jersey</span><span aria-hidden="true">↗</span></a>
+        <a class="category" href="https://cafans.com/category-920-Accessories.html" aria-label="Accessories: accesorios"><span>Accessories</span><span aria-hidden="true">↗</span></a>
+      </nav>
+    </section>
+
+    <section class="hero" aria-labelledby="titulo">
+      <div>
+        <p class="eyebrow">OrientDig spreadsheet / cuaderno de selección</p>
+        <h1 id="titulo">Menos pestañas.<span>Más criterio.</span></h1>
+        <p class="hero-sub">Una guía de OrientDig spreadsheet para pasar de una lista de enlaces a una selección que puedas explicar: por ajuste, por uso y por información disponible.</p>
+        <p class="answer"><strong>¿Qué es?</strong> Una lista de referencias de productos. Su utilidad está en ayudarte a comparar; cada detalle debe comprobarse en la ficha actual.</p>
+        <div class="actions">
+          <a class="button" href="https://www.cafans.com">Explorar en Cafans <span aria-hidden="true">↗</span></a>
+          <span style="font-size:.77rem;color:var(--muted)">Guía editorial · Sin hoja descargable</span>
+        </div>
+      </div>
+      <figure class="hero-figure">
+        <span class="image-label">REFERENCIA VISUAL / NIKE</span>
+        <img
+          class="hero-image"
+          src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&amp;fit=crop&amp;w=1000&amp;q=80"
+          alt="Zapatilla Nike roja fotografiada de perfil sobre un fondo rojo"
+          width="1000"
+          height="1000"
+          loading="eager"
+          fetchpriority="high"
+          decoding="async">
+        <figcaption class="hero-caption">
+          <span>El color atrae. Las medidas ayudan a decidir.</span>
+          <span>Imagen de inspiración</span>
+        </figcaption>
+      </figure>
+    </section>
+
+    <aside class="principle" aria-label="Criterio editorial">
+      <strong>Una foto no cuenta toda la historia.</strong>
+      <p>Antes de guardar una referencia, busca medidas, composición declarada, variante exacta y condiciones de compra. Los nombres de marca no sustituyen estas comprobaciones.</p>
+    </aside>
+
+    <section class="section" aria-labelledby="visual-titulo">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Tres objetos, tres preguntas</p>
+          <h2 id="visual-titulo">Mira el detalle que cambia la elección.</h2>
+        </div>
+        <p>Referencias visuales para practicar la comparación. No son fichas de venta ni una selección de existencias confirmadas.</p>
+      </div>
+
+      <div class="editorial-grid">
+        <article class="editorial-card">
+          <figure>
+            <img class="editorial-image"
+              src="https://shop.simon.com/cdn/shop/files/3ed47cad5d5d49f394afe251bc4917dd.jpg?width=640"
+              alt="Zapatillas Dior B101 de ante gris como referencia visual de calzado"
+              width="640" height="640" loading="lazy" decoding="async">
+          </figure>
+          <div>
+            <span class="tag">Dior / calzado</span>
+            <h3>¿Encaja la forma con tu pie?</h3>
+            <p>Para comparar zapatillas por medidas, revisa longitud interior, anchura y espacio en la puntera. Si mides una plantilla extraíble, anota cómo lo has hecho y no confundas esa cifra con la longitud del pie.</p>
+            <a class="text-link" href="https://www.cafans.com">Continuar en el catálogo ↗</a>
+          </div>
+        </article>
+
+        <article class="editorial-card">
+          <figure>
+            <img class="editorial-image"
+              src="https://media.gucci.com/style/HEXFBFBFB_South_0_160_640x640/1751298339/838745_3HBC4_2600_001_100_0000_Light.jpg"
+              alt="Gorra Gucci de lona con motivo GG en tonos beige y marrón"
+              width="640" height="640" loading="lazy" decoding="async">
+          </figure>
+          <div>
+            <span class="tag">Gucci / gorras</span>
+            <h3>¿Qué ajuste permite?</h3>
+            <p>Para comprobar la talla de una gorra, necesitas el contorno y el rango del cierre. Observa también la profundidad de la copa y la forma de la visera.</p>
+            <a class="text-link" href="https://www.cafans.com">Explorar referencias ↗</a>
+          </div>
+        </article>
+
+        <article class="editorial-card">
+          <figure>
+            <img class="editorial-image"
+              src="https://www.luxe-em.com/cdn/shop/files/001_3e78aa64-04f3-4ec6-81eb-e3aad7cdb5bc.jpg?width=640"
+              alt="Pañuelo Hermès naranja con un estampado de llaves"
+              width="640" height="640" loading="lazy" decoding="async">
+          </figure>
+          <div>
+            <span class="tag">Hermès / accesorios</span>
+            <h3>¿Conoces su escala real?</h3>
+            <p>Comprueba las dimensiones de los accesorios, el acabado de los bordes y las instrucciones de cuidado. Un primer plano bonito puede ocultar el tamaño del conjunto.</p>
+            <a class="text-link" href="https://www.cafans.com">Ver el catálogo general ↗</a>
+          </div>
+        </article>
+      </div>
+      <p class="image-note">Imágenes externas utilizadas como referencias editoriales. No acreditan autenticidad, disponibilidad en Cafans ni relación comercial con las marcas.</p>
+    </section>
+
+    <section class="section deferred" aria-labelledby="metodo-titulo">
+      <div class="method">
+        <div>
+          <p class="eyebrow">Cómo usar una OrientDig spreadsheet</p>
+          <h2 id="metodo-titulo">Una lista corta se revisa mejor.</h2>
+          <p class="method-intro">Organiza una lista de productos alrededor de una necesidad concreta. Una chaqueta para entretiempo y una camiseta deportiva requieren preguntas diferentes.</p>
+        </div>
+        <ol class="steps">
+          <li>
+            <div>
+              <h3>Define lo que necesitas</h3>
+              <p>Elige categoría, uso y ajuste. Para guardar una selección de prendas útil, escribe qué condición debe cumplir cada pieza antes de abrir más enlaces.</p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <h3>Compara variantes equivalentes</h3>
+              <p>Al comparar enlaces de productos, revisa talla, color, material declarado y contenido del paquete. Dos imágenes parecidas pueden corresponder a opciones diferentes.</p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <h3>Reabre y comprueba</h3>
+              <p>Revisa el enlace antes de comprar y anota la fecha de consulta. Si faltan medidas, fotos o condiciones claras, marca la referencia como pendiente en lugar de completar los huecos por intuición.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section deferred" aria-labelledby="tabla-titulo">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Catálogo OrientDig por categorías</p>
+          <h2 id="tabla-titulo">Qué comprobar en cada tipo de prenda.</h2>
+        </div>
+        <p>Usa estas preguntas al revisar cualquier referencia. Los accesos superiores abren las categorías de Cafans.</p>
+      </div>
+      <div class="table-shell" tabindex="0" role="region" aria-label="Tabla de comprobaciones por categoría; desplazamiento horizontal en pantallas pequeñas">
+        <table>
+          <caption>Una comprobación práctica antes de guardar cada enlace</caption>
+          <thead>
+            <tr>
+              <th scope="col">Categoría</th>
+              <th scope="col">Dato prioritario</th>
+              <th scope="col">Pregunta útil</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Calzado</td><td>Longitud interior, ancho y suela.</td><td>¿Puedo revisar la suela en fotos y comparar ambos zapatos?</td></tr>
+            <tr><td>Sudaderas y jerséis</td><td>Ancho de pecho, largo y manga.</td><td>¿Estoy comparando sudaderas por contorno o por ancho en plano?</td></tr>
+            <tr><td>Camisetas</td><td>Hombros, pecho y largo total.</td><td>¿Puedo elegir la camiseta por medidas de una que ya uso?</td></tr>
+            <tr><td>Chaquetas</td><td>Largo, manga, forro y holgura.</td><td>¿El largo de la chaqueta y su espacio interior admiten una capa debajo?</td></tr>
+            <tr><td>Pantalones y shorts</td><td>Cintura, tiro y entrepierna.</td><td>¿La cintura se mide estirada o en reposo?</td></tr>
+            <tr><td>Gorras y sombreros</td><td>Contorno y rango de ajuste.</td><td>¿El cierre permite ajustar a mi medida?</td></tr>
+            <tr><td>Conjuntos</td><td>Medidas separadas de cada pieza.</td><td>¿Puedo comparar las piezas del conjunto sin asumir que tallan igual?</td></tr>
+            <tr><td>Ropa interior</td><td>Composición, elástico y condiciones de devolución.</td><td>¿La ficha permite revisar la composición y las restricciones por higiene?</td></tr>
+            <tr><td>Camisetas deportivas</td><td>Corte, largo y personalización.</td><td>¿La talla de la camiseta deportiva corresponde a un corte ajustado o amplio?</td></tr>
+            <tr><td>Accesorios</td><td>Dimensiones, cierres y material declarado.</td><td>¿Hay una imagen que permita entender su tamaño real?</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section deferred" aria-labelledby="articulos-titulo">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Cuaderno práctico / artículos</p>
+          <h2 id="articulos-titulo">Antes de decidir, resuelve estas tres dudas.</h2>
+        </div>
+        <p>Lecturas breves sobre ajuste, observación y presupuesto. Cada una termina con una acción concreta.</p>
+      </div>
+
+      <div class="journal">
+        <article class="article" id="articulo-medidas">
+          <span class="number">01 / TALLAS EN ORIENTDIG</span>
+          <h3>La talla empieza en una prenda que ya usas.</h3>
+          <p>Mide una prenda que te quede bien sobre una superficie plana. Una letra de talla aislada no explica el corte ni permite comparar fabricantes.</p>
+          <ul>
+            <li>En camisetas y sudaderas, anota ancho de pecho, largo y manga.</li>
+            <li>Para medir pantalones y shorts, compara cintura, tiro y entrepierna.</li>
+            <li>Comprueba si la tabla expresa medidas de la prenda o del cuerpo y si utiliza centímetros o pulgadas.</li>
+          </ul>
+          <p class="takeaway"><strong>Acción:</strong> guarda tus medidas de referencia junto al enlace, sin convertirlas en una garantía de ajuste.</p>
+        </article>
+
+        <article class="article" id="articulo-qc">
+          <span class="number">02 / FOTOS QC EN ORIENTDIG</span>
+          <h3>Fotos QC: detalle antes que logotipo.</h3>
+          <p>Las fotos de control de calidad pueden ayudar a observar defectos visibles. Para revisar costuras y cierres, necesitas vistas cercanas y suficientemente nítidas.</p>
+          <ul>
+            <li>En fotos QC de zapatillas, observa ambos perfiles, talones y suelas.</li>
+            <li>En accesorios, busca bordes, uniones y herrajes.</li>
+            <li>No deduzcas composición, comodidad o autenticidad únicamente por una imagen.</li>
+          </ul>
+          <p class="takeaway"><strong>Acción:</strong> solicita la vista que falta. Si un detalle no se puede observar, déjalo como no comprobado.</p>
+        </article>
+
+        <article class="article" id="articulo-costes">
+          <span class="number">03 / PRESUPUESTO</span>
+          <h3>El importe de la ficha no es el presupuesto.</h3>
+          <p>Para calcular el coste total de un pedido, separa producto, transporte interno, servicios, envío internacional y posibles impuestos o cargos de importación.</p>
+          <ul>
+            <li>Comprueba moneda, tipo de cambio y condiciones aplicables.</li>
+            <li>El peso real es la masa; el volumétrico se calcula con las dimensiones según la fórmula del transportista.</li>
+            <li>Revisa las condiciones de devolución antes de pagar y distingue una estimación de un importe confirmado.</li>
+          </ul>
+          <p class="takeaway"><strong>Acción:</strong> deja cada coste desconocido como pendiente. Un presupuesto incompleto no permite una comparación justa.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section deferred faq-layout" id="preguntas" aria-labelledby="faq-titulo">
+      <div>
+        <p class="eyebrow">Respuestas directas</p>
+        <h2 id="faq-titulo">Lo esencial, sin rodeos.</h2>
+        <p>Esta OrientDig spreadsheet se aborda como una herramienta de organización. Aquí encontrarás criterios para revisar referencias, no promesas sobre vendedores o resultados.</p>
+      </div>
+      <div>
+        <details open>
+          <summary>¿Qué es una OrientDig spreadsheet?</summary>
+          <p>Es una lista de enlaces y datos de productos que sirve para organizar una búsqueda y comparar opciones. La información de cada fila debe contrastarse con la ficha actual del artículo.</p>
+        </details>
+        <details>
+          <summary>¿Cómo usar una OrientDig spreadsheet sin perderse entre enlaces?</summary>
+          <p>Elige una categoría, reúne unas pocas opciones comparables y anota enlace, variante, medidas y fecha de revisión. Descarta las fichas que no aporten los datos necesarios para decidir.</p>
+        </details>
+        <details>
+          <summary>¿Cómo comprobar las tallas en OrientDig?</summary>
+          <p>Compara la tabla del artículo con una prenda o un calzado que ya te quede bien. Revisa las unidades y distingue entre medidas del cuerpo y medidas de la prenda; no te bases únicamente en la letra de la talla.</p>
+        </details>
+        <details>
+          <summary>¿Las fotos QC en OrientDig garantizan autenticidad?</summary>
+          <p>No. Las fotos de control de calidad pueden mostrar detalles y defectos visibles, pero no constituyen por sí solas una prueba de autenticidad, composición o durabilidad.</p>
+        </details>
+        <details>
+          <summary>¿Dónde llevan los enlaces de esta página?</summary>
+          <p>Los diez accesos de categorías llevan a sus páginas correspondientes en cafans.com. Los demás enlaces de navegación llevan a https://www.cafans.com. Esta página no ofrece una hoja descargable ni tramita pedidos.</p>
+        </details>
+        <details>
+          <summary>¿Esta guía representa a OrientDig o a las marcas de las imágenes?</summary>
+          <p>No. Es una guía editorial independiente. Los nombres y las imágenes se utilizan como referencias visuales; no implican colaboración, autorización comercial ni disponibilidad de esos artículos en el destino.</p>
+        </details>
+      </div>
+    </section>
+
+    <section class="closing" aria-labelledby="cierre-titulo">
+      <div>
+        <h2 id="cierre-titulo">Elige una categoría. Conserva tu criterio.</h2>
+        <p>Explora el catálogo y comprueba los detalles de cada ficha antes de decidir.</p>
+      </div>
+      <a class="button" href="https://www.cafans.com">Visitar Cafans <span aria-hidden="true">↗</span></a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer-top">
+        <span class="brand"><span class="brand-icon" aria-hidden="true">M.</span>Mesa de selección</span>
+        <a class="text-link" href="https://www.cafans.com">Continuar en Cafans ↗</a>
+      </div>
+      <p>Guía independiente en español sobre OrientDig spreadsheet. No pertenece a OrientDig, Nike, Gucci, Hermès ni Dior. Las marcas corresponden a sus titulares. Las imágenes son referencias editoriales externas y no representan existencias verificadas del catálogo de destino.</p>
+      <p>Comprueba variantes, medidas, información del vendedor y condiciones vigentes en cada ficha. Esta página no publica precios, descuentos, valoraciones ni garantías de autenticidad.</p>
+    </div>
+  </footer>
+</body>
+</html>
